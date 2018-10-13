@@ -543,8 +543,8 @@ class NameServer(health_checks.NameServerHealthChecks, provider_extensions.NameS
 
     if self.hostname.endswith('ultradns.net') or self.ip.startswith('156.154.7'):
       (node, duration) = self.GetUltraDnsNodeWithDuration()
-    elif self.ip.startswith('8.8'):
-      (node, duration) = self.GetMyResolverHostNameWithDuration()
+    # elif self.ip.startswith('8.8'):
+    #   (node, duration) = self.GetMyResolverHostNameWithDuration()
     elif self.hostname.endswith('opendns.com') or self.ip.startswith('208.67.22'):
       (node, duration) = self.GetOpenDnsNodeWithDuration()
     else:
