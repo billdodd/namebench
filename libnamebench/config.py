@@ -50,6 +50,7 @@ SETS_TO_TAGS_MAP = {
   'regional':  ['internal', 'country', 'nearby', 'network', 'isp', 'likely-isp'],
   'isp':       ['isp', 'dhcp', 'internal', 'likely-isp'],
   'network':   ['network', 'internal', 'dhcp'],
+  'custom':    ['custom']
 }
 
 def ExpandSetsToTags(set_names):
