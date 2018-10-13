@@ -88,7 +88,7 @@ class NameServerHealthChecks(object):
             found_usable_record = True
             found_match = False
             for string in expected:
-              if reply.startswith(string) or reply.endswith(string):
+              if reply.lower().startswith(string.lower()) or reply.lower().endswith(string.lower()):
                 found_match = True
                 break
             if not found_match:
